@@ -1,0 +1,23 @@
+body {
+}
+
+section {
+    background-color: lightgrey;
+}
+
+section article {
+    font-weight: bold;
+}
+
+#green {
+    color: green;
+}
+
+#linethrough {
+    text-decoration: line-through;
+}
+
+
+footer a:hover {
+    font-family: fantasy;
+}
