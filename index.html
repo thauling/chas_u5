@@ -1,0 +1,107 @@
+<!--
+
+header
+nav
+main
+minst en article
+minst en ordnad lista i article
+minst tre section
+en h1
+minst tre h2
+minst en a
+footer
+
+Lägg in en bakgrundsbild med inline CSS i <body>
+Gör en unik stil med id döpt till “strongblue” som gör texten fet och blå, använd stilen på en h2 i din HTML, CSS:en ska vara skriven i ett <styles> element (internt style-sheet) i din HTML-fil
+Ta in extern CSS från css/style.css i din HTML-fil och gör följande CSS: 
+Ändra bakgrundsfärg på alla <section> till ljusgrå
+Gör alla rubriker i <section> till fetstil
+Gör första listitem i en ordnad lista i en <article> till grön bakgrundsfärg
+Gör en klass som ändrar texten till överstruken och applicera den på ett stycke i en <section>
+Gör en klass som ändrar font när användaren har muspekaren ovanför elementet, applicera klassen på alla länkar i footer
+
+
+-->
+
+<!doctype html>
+<html lang="en">
+
+<head> 
+
+ <meta charset="utf-8">
+ <title>Chas_u5</title> <!-- perhaps to change to actual name later -->
+<link rel="stylesheet" type="text/css" href="./css/style.css" /> 
+ <meta name="description" content="something">
+ <meta name="Thomas Hauling" content="SitePoint ?? What is this?">
+ 
+ 
+<style>
+
+#strongblue{
+    color: blue;
+    font-weight: bold;
+}
+
+</style>
+
+ </head>
+
+
+ <body style="background-image: url(backgroundimg.jpg);"> <!-- outermost content tag -->
+<!-- 
+<img src="http://placehold.it/200" alt="fancy background">
+<span class="highlight">inline element</span>
+ -->
+
+ <header>
+This is my header for you
+ </header> 
+
+<nav>
+<ul>
+    <li><a href="#">item 1 </a></li>
+    <li><a href="#">item 2 </a></li>
+    <li><a href="#">item 3 </a></li>
+</ul>
+</nav>
+
+<main>
+<section>
+<h1>All my content of this topic</h1>
+<a>This site contains articles on the topic - enjoy reading them!</a>
+</section>
+
+<section>
+<article>
+<h2>clever article 1</h2>
+Aliquip irure nisi irure <span id="linethrough">laboris excepteur laboris </span> Lorem nostrud laboris. Anim sit veniam enim deserunt ad tempor id velit culpa nostrud sit. Incididunt magna elit mollit aliqua nulla do enim do excepteur velit ullamco. Minim aliquip reprehenderit dolore voluptate non magna amet exercitation aliqua velit. Enim ipsum aute amet sint qui aliquip enim et consectetur do cillum. Dolore non magna irure proident est do aliqua pariatur elit dolor do. Laboris irure duis nulla dolore deserunt ea cillum nulla occaecat incididunt quis.
+</article>
+<article>
+<h2>clever article 2</h2>
+Ut Lorem do non ullamco esse eiusmod aliqua enim. Officia anim duis cupidatat ad voluptate. Adipisicing nulla tempor aute reprehenderit est exercitation duis eiusmod exercitation do nisi aute commodo. Anim anim mollit incididunt fugiat consectetur in culpa enim sit qui amet tempor. Ut laboris voluptate ut qui id tempor minim do.
+</article>
+<article>
+<h2>clever article 3</h2>
+Excepteur ipsum minim sit est fugiat ex deserunt velit pariatur do dolore cillum id. Enim ipsum elit cillum eu incididunt. Incididunt commodo cupidatat eu incididunt. Eu non tempor dolore aliqua cupidatat ad et ea aliqua. Dolor eiusmod excepteur qui nostrud commodo elit esse officia laborum eiusmod labore tempor.
+</article>
+
+</section>
+
+<section>
+<h2 id="strongblue">A list of links on the topic, sorted by relevance</h2>
+<ol>
+    <li><a id="green" href="#">most important item </a></li>
+    <li><a href="#">second most important item </a></li>
+    <li><a href="#">leaast important item</a></li>
+</ol>
+</section> 
+
+</main>
+
+<footer>
+<a href="#">About</a>
+<a href="#">Invest</a>
+</footer>
+ <body> 
+
+ </html>
